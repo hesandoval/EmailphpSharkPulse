@@ -81,7 +81,7 @@
                 </head>
                 <body>
                     <h1>Pulse Information</h1>
-                    <h2>Species guessed: A Species</h2>
+                    <h2>Species guessed: .".$users_information['SHARK_NAME']."</h2>
                     <h2>Latitude: ".$users_information['LATITUDE']."</h2>
                     <h2>Longitude: ".$users_information['LONGITUDE']."</h2>
                     <h2>Date: ".$users_information['DATE']."</h2>
