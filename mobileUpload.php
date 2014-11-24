@@ -82,10 +82,10 @@
                 <body>
                     <h1>Pulse Information</h1><br>
                     <h2>Species guessed: A Species</h2><br>
-                    <h2>Latitude: $users_information['LATITUDE']</h2><br>
-                    <h2>Longitude: $users_information['LONGITUDE']</h2><br>
-                    <h2>Date: $users_information['DATE']</h2><br>
-                    <h2>Posted by: <a href=$email> $users_information['USERS_EMAIL']</a></h2><br>
+                    <h2>Latitude: ".$users_information['LATITUDE']."</h2><br>
+                    <h2>Longitude: ".$users_information['LONGITUDE']."</h2><br>
+                    <h2>Date: ".$users_information['DATE']."</h2><br>
+                    <h2>Posted by: <a href=$email> ".$users_information['USERS_EMAIL']."</a></h2><br>
                 </body>
                 </html>
             ";
