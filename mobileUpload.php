@@ -65,14 +65,12 @@
         $sql = $sql . $data;
         if($result = @mysqli_query($mysql_connection, $sql))
         {
-            echo "Completed!";
-            http_response_code(200);
+           # echo "Completed!";
+           # http_response_code(200);
             $email = $_REQUEST['email'] ;
             $subject = "Alert! A new pulse has been posted to SharkPulse";
             $header  = 'MIME-Version: 1.0' . "\r\n";
             $header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-            $header .= 'To: Edgar <edsan@example.com>' . "\r\n";
-            $header .= 'From: SharkPulse <sharkbaselines@example.com>' . "\r\n";
 
             $message = "
                 <html> 
@@ -81,7 +79,7 @@
                 </head>
                 <body>
                     <h1>Pulse Information</h1>
-                    <h2>Species guessed: .".$users_information['SHARK_NAME']."</h2>
+                    <h2>Species guessed: ".$users_information['SHARK_NAME']."</h2>
                     <h2>Latitude: ".$users_information['LATITUDE']."</h2>
                     <h2>Longitude: ".$users_information['LONGITUDE']."</h2>
                     <h2>Date: ".$users_information['DATE']."</h2>
@@ -92,7 +90,7 @@
 
   if(mail( "edsan5678@sbcglobal.net", $subject,
     $message, $header )){
-    echo "Mail Sent Successfully";
+    #echo "Mail Sent Successfully";
     }
         }
         else{
