@@ -3,7 +3,6 @@
   $subject = "Alert! A new pulse has been posted to SharkPulse";
   $header  = 'MIME-Version: 1.0' . "\r\n";
   $header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-  $header .= 'To: Edgar <edsan@example.com>' . "\r\n";
   $header .= 'From: SharkPulse <sharkbaselines@example.com>' . "\r\n";
 
   $message = "
